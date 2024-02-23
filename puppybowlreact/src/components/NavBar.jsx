@@ -5,7 +5,9 @@ export default function Navbar(){
     return(
         <div id = "navBar">
             <Link to= 'NewPlayerForm'>New Player Form</Link>
-            <Link to = '/all-players'>All Players</Link>
+            <br></br>
+            <Link to = '/AllPlayers'>All Players</Link>
+            <br></br>
             <Link to = '/players/:id'>Single Id</Link>
         </div>
     )

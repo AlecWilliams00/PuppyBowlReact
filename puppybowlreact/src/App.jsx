@@ -5,7 +5,7 @@ import {Link, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Navbar from './components/NavBar'
 import SinglePlayer from './components/SinglePlayer'
-import allPlayers from './components/AllPlayers'
+import AllPlayers from './components/AllPlayers'
 import Newplayerform from './components/NewPlayerForm'
 import { BrowserRouter } from 'react-router-dom'
 
@@ -20,6 +20,7 @@ function App() {
      <Navbar/>
      <Routes>
       <Route path = '/NewPlayerForm' element = {<Newplayerform/>}/>
+      <Route path = '/AllPlayers' element = {<AllPlayers/>}/>
      </Routes>
     </BrowserRouter>
 

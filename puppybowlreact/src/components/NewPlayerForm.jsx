@@ -10,7 +10,7 @@ export default function newPlayerForm(){
         event.preventDefault()
         try{
             const response = await fetch(
-                "https://fsa-puppy-bowl.herokuapp.com/api/2305-FTB-ET-WEB-PT/players",{               
+                "https://fsa-puppy-bowl.herokuapp.com/api/2311-FTB-ET-WEB-PT/players",{               
                     method: 'POST',
                     headers:{
                     'Content-type': 'application/json',
