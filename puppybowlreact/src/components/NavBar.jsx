@@ -7,8 +7,8 @@ export default function Navbar(){
             <Link to= 'NewPlayerForm'>New Player Form</Link>
             <br></br>
             <Link to = '/AllPlayers'>All Players</Link>
-            <br></br>
-            <Link to = '/players/:id'>Single Id</Link>
+          
+           
         </div>
     )
 }

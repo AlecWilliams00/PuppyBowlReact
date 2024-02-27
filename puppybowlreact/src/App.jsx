@@ -20,6 +20,7 @@ function App() {
      <Navbar/>
      <Routes>
       <Route path = '/NewPlayerForm' element = {<Newplayerform/>}/>
+      <Route path = '/players/:playerId' element = {<SinglePlayer/>}/>
       <Route path = '/AllPlayers' element = {<AllPlayers/>}/>
      </Routes>
     </BrowserRouter>

@@ -30,21 +30,21 @@ export default function newPlayerForm(){
     }
     return(
         <>
-        <form onSubmit = {handleSubmit}>
+        <form id = "inputform" onSubmit = {handleSubmit}>
             <label>Player Name</label>
-            <input value={playername} onChange={(event)=>setPlayername(event.target.value)}></input>
+            <input required value={playername} onChange={(event)=>setPlayername(event.target.value)}></input>
             <br></br>
             <label>Breed</label>
-            <input value={breed} onChange={(event)=>setBreed(event.target.value)}></input>
+            <input required value={breed} onChange={(event)=>setBreed(event.target.value)}></input>
             <br></br>
             <label htmlFor ="playerStatus">Status</label>
-            <select id= "playerStatus" name= "status" value={status} onChange={(event)=>setStatus(event.target.value)}>
+            <select required id= "playerStatus" name= "status" value={status} onChange={(event)=>setStatus(event.target.value)}>
                 <option value = "field">field</option>
                 <option value = "bench">bench</option>
             </select>
             <br></br>
             <label >Player Image</label>
-            <input value={img} onChange={(event)=>setImg(event.target.value)}></input>
+            <input required value={img} onChange={(event)=>setImg(event.target.value)}></input>
             <br></br>
             <button>Submit</button>
         </form>
